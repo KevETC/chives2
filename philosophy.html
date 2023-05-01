@@ -129,7 +129,7 @@
 						if (xmlhttp.readyState == 4) {
 							var response = JSON.parse(xmlhttp.response);
 
-							console.log(xmlhttp.response);
+							document.getElementById('include_sb').innerHTML(xmlhttp.response);
 						}
 					};
 					xmlhttp.open("GET", "sidebar_menu.html", true);
